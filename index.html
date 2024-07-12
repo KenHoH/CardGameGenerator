@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Card Generator</title>
+</head>
+<body>
+    <main class="main" id="main">
+        <h1>Card Generator</h1>
+        <div class="input-section">
+            <label for="total-card">Insert Total Number of Cards </label><br>
+            <input id="card-number" class="input" name="total-card" type="text"><br>
+            <label for="total-card">Insert The Character For The Card Value</label><br>
+            <input id="card-value" class="input" name="total-card" type="text"><br>
+        </div>
+        <button class="button" onclick="generateCard()">Generate</button>
+    </main>
+    <div id="card-deck" class="card-deck"></div>
+    <button class="button restart" id="restart" onclick="restartButton()">Restart</button>
+    <script src="script.js"></script>
+</body>
+</html>
